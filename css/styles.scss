@@ -1,0 +1,69 @@
+@import "normalize";
+
+body {
+	font-family: 'Playfair Display', serif;
+}
+
+/* HEADER STYLES */
+section.header {
+	font-family: 'Josefin Sans', sans-serif;	
+	h1 {
+		font-size: 60px;
+		color: #DAA520;
+		margin: 0;
+		padding-top: 20px;
+		/*display: inline;*/
+	}	
+	h2 {
+		margin-top: 2px;
+		font-weight: 400;
+	}
+}
+
+/* WRAPPER STYLES */
+.wrapper {
+	width: 80%;
+	padding: 30px 15px;
+	margin: auto;
+}
+
+/* DOCUMENTATION STYLES */
+section.documentation {
+	h3 {
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 35px;
+		margin: 0;
+		color: #DAA520;
+	}
+	span.gold {
+		color: #DAA520;
+	}
+	p {
+		font-size: 17px;
+		line-height: 130%;
+	}
+}
+
+/* ARTICLE EXAMPLES */
+section.articleOne {
+	h3 {
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 35px;
+		margin-bottom: 0;
+		color: #DAA520;
+	}
+}
+
+/*.articleTwo {
+	background: tomato;
+}*/
+
+/* CLOUD STYLES */
+
+.cloud-container{
+	text-align: center;	
+	margin-top: 60px;
+	.cloud {
+		fill: #DAA520;
+	}
+}
