@@ -4,20 +4,19 @@ $.fn.airScroll = function(option){
 
 	progress.pageHeight = $(this).height();
 	progress.windowHeight = $(window).height();
-	progress.startScroll = $(this).position().top;
+	// progress.startScroll = $(this).position();
 	progress.divHeight = $(this).outerHeight();
-	progress.ratio = (progress.pageHeight) / (progress.windowHeight);
-	// console.log()
+	console.log(progress.pageHeight)
 
 	progress.events = function(){
 		$(window).on('scroll',function(){
-			var currentScroll = $(this).scrollTop() - progress.startScroll;
+			var currentScroll = $(document).scrollTop();
 			var itemSize = $('.balloon-container img').height();
 			// var scrollPercentage = ((progress.divHeight - progress.windowHeight)) * 100;
-			var scrollPercentage = ((currentScroll)/(progress.divHeight - progress.windowHeight));
+			var scrollPercentage = (currentScroll / progress.pageHeight) * 448;
 			// (currentScroll - progress.ratio) * 100;
 			$('.balloon-container img').css({
-									'top': scrollPercentage 
+									'top': scrollPercentage
 								});
 			console.log(scrollPercentage);
 		});

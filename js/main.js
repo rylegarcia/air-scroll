@@ -1,4 +1,4 @@
 $(function() {
 	$('.articleOne').airScroll();
-	$('.articleTwo').airScroll();
+	// $('.articleTwo').airScroll();
 });
