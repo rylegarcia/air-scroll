@@ -1,0 +1,13 @@
+<h1 id="air-scroll">Air-Scroll</h1>
+<h1 id="getting-started">Getting Started</h1>
+<p>You will need to add a couple of files onto your own files. Make sure you grab all of them to ensure that this plug-in works. 
+Copy paste the: 1) images folder, 2) &quot;airScroll.js&quot; (into your scripts folder) and, 3) &quot;airScroll.css&quot; (into your styles folder).</p>
+<p>The images folder will contain an image called &quot;hotAirBalloon.png&quot;, which you can place anywhere on your HTML document. For best results, place it before any of your content. Create a figure container for the image and call it &quot;balloon-container&quot;.</p>
+<pre><code>        &lt;figure class=&quot;balloon-container&quot;&gt;
+            &lt;img src=&#39;images/hotAirBalloon.png&#39;&gt;
+        &lt;/figure&gt; 
+</code></pre><p>Now call the function in your main.js and add the class of the parent container of your selected content to the &quot;.airScroll()&quot; method.</p>
+<pre><code>        $(function() {
+            $(&#39;.articleOne&#39;).airScroll();
+        });
+</code></pre><p>Enjoy!</p>
